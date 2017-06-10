@@ -73,4 +73,4 @@ sub = pd.read_csv(root_dir + 'sample_submission.csv')
 for c in sub.columns[sub.columns != 'ParcelId']:
     sub[c] = p_test
 
-sub.to_csv('lgb_starter.csv', index=False, float_format='%.4f')
+sub.to_csv(root_dir + 'lgb_starter.csv', index=False, float_format='%.4f')
